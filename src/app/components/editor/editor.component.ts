@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { User } from '../../services/user.model';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-editor',
@@ -6,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./editor.component.css']
 })
 export class EditorComponent implements OnInit {
-
-  constructor() { }
-
+  @Input() user: User;
+  constructor(public auth: AuthService) { }
   ngOnInit(): void {
   }
 

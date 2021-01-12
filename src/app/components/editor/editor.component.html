@@ -1,1 +1,4 @@
-<p>editor works!</p>
+<h3>Howdy, {{ user.displayName }}</h3>
+<img  [src]="user.photoURL">
+<p>UID: {{ user.uid }}</p>
+<button (click)="auth.signOut()">Logout</button>

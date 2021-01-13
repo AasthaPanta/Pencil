@@ -10,8 +10,7 @@ import { User } from '../../services/user.model';
 })
 export class BaseComponent implements OnInit {
   
-  user$: Observable<User> =  this.auth.user$;
-
+  user$: Observable<User | null | undefined> =  this.auth.user$;
   constructor(public auth: AuthService) { }
 
   ngOnInit(): void {

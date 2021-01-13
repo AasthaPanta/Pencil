@@ -8,7 +8,7 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./editor.component.css']
 })
 export class EditorComponent implements OnInit {
-  @Input() user: User;
+  @Input() user: User | null | undefined;
   constructor(public auth: AuthService) { }
   ngOnInit(): void {
   }

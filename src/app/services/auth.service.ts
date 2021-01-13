@@ -14,7 +14,7 @@ import { switchMap } from 'rxjs/operators';
 })
 export class AuthService {
 
-  user$: Observable<User>;
+  user$: Observable<User | null | undefined>;
 
   constructor(
     private afAuth: AngularFireAuth,
@@ -39,6 +39,7 @@ export class AuthService {
   async googleSignin() {
     const provider = new firebase.auth.GoogleAuthProvider();
     const credential = await this.afAuth.signInWithPopup(provider);
+    console.log(credential.user);
     return this.updateUserData(credential.user);
   }
 

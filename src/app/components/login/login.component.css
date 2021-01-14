@@ -15,8 +15,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: whitesmoke;
+  background-color:#84ABE2;
 }
 
 .pencil-login__container--information .infobox {
@@ -26,21 +25,31 @@
 }
 
 .logo img{
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 130px;
+  margin-top: 60px;
 }
 
 .title {
   font-size: 36px;
-  color: darkgray;
-  font-weight: 300;
-  margin-top: 20px;
+  color: #93045B;
+  font-weight: 500;
+  margin-top: 40px;
 }
 
 .subtitle {
-  font-size: 20px;
-  margin-top: 20px;
-  font-weight: 300;
+  font-size: 16px;
+  margin-top: 40px;
+  font-weight: 500;
+  text-align: center;
+  width: 80%;
+  line-height: 1.6rem;
+}
+
+.subtitle div {
+  color: #93045B;
+  font-size: 22px;
+  margin-top: 40px;
 }
 
 .google-btn {
@@ -50,7 +59,7 @@
   border-radius: 2px;
   box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .google-icon-wrapper {
   position: absolute;

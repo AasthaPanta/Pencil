@@ -8,6 +8,11 @@ import { EditorComponent } from './components/editor/editor.component';
 import { BaseComponent } from './components/base/base.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    pathMatch: 'full',
+    component: BaseComponent
+  },
  
   {
     path: 'editor',

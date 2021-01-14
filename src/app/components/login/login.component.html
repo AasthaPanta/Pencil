@@ -1,6 +1,31 @@
-<h3>Howdy, GUEST</h3>
+<!-- <h3>Howdy, GUEST</h3>
 <p>Login to get started...</p>
-
+<img src="../../../assets/online.gif" />
 <button (click)="auth.googleSignin()">
     <i class="fa fa-google"></i> Connect Google
-</button>
+</button> -->
+
+<div class="pencil-login__container">
+    <div class="pencil-login__container--thumbnail">
+        <img class="pencil-login__container--thumbnail-img" src="../../../assets/images/online.gif" />
+    </div>
+    <div class="pencil-login__container--information">
+        <div class="infobox">
+            <div class="logo">
+                <img src="../../../assets/images/pencil.png" />
+            </div>
+            <div class="title">
+                Experience the real learning
+            </div>
+            <div class="subtitle">
+                Get started with just a click
+            </div>
+            <div class="google-btn" (click)="auth.googleSignin()">
+                <div class="google-icon-wrapper">
+                  <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                </div>
+                <p class="btn-text"><b>Sign in with google</b></p>
+            </div>
+        </div>
+    </div>
+</div>

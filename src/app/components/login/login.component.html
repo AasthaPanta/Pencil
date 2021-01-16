@@ -1,34 +1,37 @@
-<!-- <h3>Howdy, GUEST</h3>
-<p>Login to get started...</p>
-<img src="../../../assets/online.gif" />
-<button (click)="auth.googleSignin()">
-    <i class="fa fa-google"></i> Connect Google
-</button> -->
 
-<div class="pencil-login__container">
-    <div class="pencil-login__container--thumbnail">
-        <img class="pencil-login__container--thumbnail-img" src="../../../assets/images/online.gif" />
-    </div>
-    <div class="pencil-login__container--information">
-        <div class="infobox">
-            <div class="logo">
-                <img src="../../../assets/images/pencil.png" />
-            </div>
+<div *ngIf="showLoader; then loader else login">
+    <!-- If authenticated then the user will be redirected to editor view else to login view -->
+</div>
+<ng-template #login>
+    <div class="pencil-login__container">
+        <div class="pencil-login__logo">
+            <img src="../../../assets/images/pencil.png" alt="logo"/>
+        </div>
+        <div class="pencil-login__container--info">
             <div class="title">
                 Experience the real learning
             </div>
             <div class="subtitle">
                 Fun, interactive and comprehensive lessons and exercises,
                 Highly personalized dashboard and very flexible and customizable productivity tracker,
-                we've got it all. Experience it yourself, with just a single click ;)
+                we've got it all. Experience it yourself, with just a single click <span>;)</span>
                 <div>Click below to get started</div>
             </div>
             <div class="google-btn" (click)="auth.googleSignin()">
                 <div class="google-icon-wrapper">
-                  <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
                 </div>
                 <p class="btn-text"><b>Sign in with google</b></p>
             </div>
         </div>
+        <div class="pencil-login__container--image">
+            <img class="thumbnail-img" src="../../../assets/images/online-learning.svg" />
+        </div>
     </div>
-</div>
+</ng-template>
+
+<ng-template #loader>
+    <div class="pencil-loader">
+        <img  class="loader-img" src="../../../assets/images/test.gif" />
+    </div>
+</ng-template>

@@ -1,4 +1,11 @@
-<h3>Howdy, {{ user?.displayName }}</h3>
+<!-- <h3>Howdy, {{ user?.displayName }}</h3>
 <img  [src]="user?.photoURL">
 <p>UID: {{ user?.uid }}</p>
-<button (click)="auth.signOut()">Logout</button>
+<button (click)="auth.signOut()">Logout</button> -->
+
+<app-header></app-header>
+<div class="pencil-editor__container">
+  <img  [src]="user?.photoURL">
+  <p>UID: {{ user?.uid }}</p>
+  <button (click)="auth.signOut()">Logout</button>
+</div>

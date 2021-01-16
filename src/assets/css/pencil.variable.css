@@ -1,0 +1,54 @@
+:root {
+  /* COLORS */
+  /* Semantic Colors */
+  --pencil-primary-base: #00C472;
+  --pencil-primary-dark: #007B47;
+  --pencil-primary-light: #5FE0AA;
+  --pencil-primary-lightest: #E5F9F1;
+  --pencil-primary-contrast: #FFFFFF;
+
+  --pencil-secondary-base: #040621;
+  --pencil-secondary-dark: #020414;
+  --pencil-secondary-light: #1B2633;
+  --pencil-secondary-lightest: #87939B;
+  --pencil-secondary-contrast: #FFFFFF;
+
+  --pencil-accent-base: #3DAFD1;
+  --pencil-accent-dark: #007EA3;
+  --pencil-accent-light: #8CDDF5;
+  --pencil-accent-lightest: #EBF7FB;
+  --pencil-accent-contrast: #FFFFFF;
+
+  --pencil-default-base: #B5C0C7;
+  --pencil-default-dark: #87939B;
+  --pencil-default-light: #E6EAEA;
+  --pencil-default-lightest: #F5F7F6;
+  --pencil-default-contrast: #FFFFFF;
+
+  --pencil-danger-base: #D43131;
+  --pencil-danger-dark: #A70202;
+  --pencil-danger-light: #E25D5D;
+  --pencil-danger-lightest: #F9ABAB;
+  --pencil-danger-contrast: #FFFFFF;
+
+  --pencil-warning-base: #E8BB28;
+  --pencil-warning-dark: #C6AB1E;
+  --pencil-warning-light: #F5E27C;
+  --pencil-warning-lightest: #FFF9D6;
+  --pencil-warning-contrast: #FFFFFF;
+
+  /* Greys */
+  --pencil-gray-00: #FFFFFF;
+  --pencil-gray-01: #F5F7F6;
+  --pencil-gray-02: #E6EAEA;
+  --pencil-gray-03: #B5C0C7;
+  --pencil-gray-04: #87939B;
+  --pencil-gray-05: #47535A;
+  --pencil-gray-06: #1B2633;
+  --pencil-gray-07: #040621;
+  --pencil-gray-08: #000000;
+
+  --pencil-white: #FFFFFF;
+  --pencil-black: #000000;
+
+}

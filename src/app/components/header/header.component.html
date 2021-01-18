@@ -3,4 +3,9 @@
       <img src="assets/images/pencil.png" class="pencil-logo" alt="logo"/>
     </div>
     <span class="spacer"></span>
+    <app-profile-card  
+      *ngIf="auth.user$ | async as user"
+      [user]="user"
+      (logoutClick)="logout()">
+    </app-profile-card>
 </mat-toolbar>

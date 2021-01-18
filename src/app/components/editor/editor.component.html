@@ -1,11 +1,9 @@
-
-<app-header></app-header>
-
-<div class="pencil-editor__container">
-  <div #container class="pencil-editor__container--writing" [innerHTML] = "editorContent?.content">
-    
+<div class="pencil-editor">
+  <app-header></app-header>
+  <div class="pencil-editor__container">
+    <div #container class="pencil-editor__container--writing" [innerHTML] = "editorContent?.content">
+    </div>
   </div>
-  <br>
-  <button mat-raised-button color="primary" (click)="auth.signOut()">Logout</button>
 </div>
+
 

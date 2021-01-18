@@ -26,7 +26,6 @@ export class AuthService {
       switchMap(user => {
         // Logged in
         if(user) {
-          console.log(user);
           return this.afs.doc<User>(`users/${user.uid}`).valueChanges();
         } else {
           // Logged out
@@ -40,7 +39,6 @@ export class AuthService {
   async googleSignin() {
     const provider = new firebase.auth.GoogleAuthProvider();
     const credential = await this.afAuth.signInWithPopup(provider);
-    console.log(credential.user);
     return this.updateUserData(credential.user);
   }
 

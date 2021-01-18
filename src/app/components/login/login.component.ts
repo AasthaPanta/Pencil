@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.showLoader = false;
-    }, 1500)
+    }, 2000)
   }
 
 }

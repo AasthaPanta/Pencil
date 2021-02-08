@@ -3,6 +3,7 @@
       <img src="assets/images/pencil.png" class="pencil-logo" alt="logo"/>
     </div>
     <span class="spacer"></span>
+    <button mat-stroked-button color="primary" style="margin-right: 12px;">Wed, Jan 20</button>
     <app-profile-card  
       *ngIf="auth.user$ | async as user"
       [user]="user"
